@@ -21,6 +21,7 @@ androidx-espresso-core = "3.7.0"
 datastore-preferences = "1.1.7"
 kotlinx-coroutines-core = "1.10.2"
 kotlinx-coroutines-android = "1.8.1"
+uiTextGoogleFonts = "1.9.0"
 
 [libraries]
 # AndroidX Core
@@ -48,6 +49,7 @@ kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-junit" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-espresso-core" }
+androidx-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
 
 [plugins]
 # Plugins

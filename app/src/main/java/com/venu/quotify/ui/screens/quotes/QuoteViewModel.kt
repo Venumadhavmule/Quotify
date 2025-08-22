@@ -1,4 +1,4 @@
-package com.venu.quotify.ui.screens.quote
+package com.venu.quotify.ui.screens.quotes
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

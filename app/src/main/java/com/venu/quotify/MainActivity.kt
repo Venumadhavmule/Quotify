@@ -4,44 +4,23 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.venu.quotify.domain.model.LocalQuoteDataSource
+import com.venu.quotify.domain.repository.QuoteRepositoryImpl
+import com.venu.quotify.ui.screens.quotes.QuoteScreen
+import com.venu.quotify.ui.screens.quotes.QuoteViewModel
 import com.venu.quotify.ui.theme.QuotifyTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val localDataSource = LocalQuoteDataSource()
+        val quoteRepository = QuoteRepositoryImpl(localDataSource)
+        val quoteViewModel = QuoteViewModel(quoteRepository)
         enableEdgeToEdge()
         setContent {
             QuotifyTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                QuoteScreen(quoteViewModel, onNavigateToCreateQuote = {})
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    QuotifyTheme {
-        Greeting("Android")
     }
 }

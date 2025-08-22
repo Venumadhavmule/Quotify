@@ -19,12 +19,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.venu.quotify.domain.model.Quote
 import com.venu.quotify.ui.theme.QuotifyTheme
 
 
 @Composable
 fun QuoteCard(
-    quote: Any,
+    quote: Quote,
     onFavouriteClicked: () -> Unit,
 ) {
     Card(
@@ -39,14 +40,14 @@ fun QuoteCard(
             horizontalAlignment = Alignment.Start
         ) {
             Text(
-                text = "Life is what happens when you're busy making other plans",
+                text = quote.text,
                 style = MaterialTheme.typography.titleLarge,
                 textAlign = TextAlign.Start,
                 fontStyle = FontStyle.Italic
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "- Mark Twain",
+                text = quote.author,
                 style = MaterialTheme.typography.bodyMedium,
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.End,

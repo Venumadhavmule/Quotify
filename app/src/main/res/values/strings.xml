@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Quotify</string>
+    <string name="quotify_app_bar_content_description">Top App Bar</string>
 </resources>

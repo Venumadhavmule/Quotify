@@ -45,7 +45,7 @@ fun QuoteCard(
                 textAlign = TextAlign.Start,
                 fontStyle = FontStyle.Italic
             )
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = quote.author,
                 style = MaterialTheme.typography.bodyMedium,

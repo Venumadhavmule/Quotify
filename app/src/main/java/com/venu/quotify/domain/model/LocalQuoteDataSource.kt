@@ -7,7 +7,7 @@ class LocalQuoteDataSource {
                 id = 1,
                 text = "The only way to do great work is to love what you do.",
                 author = "Steve Jobs",
-                isFavorite = false
+                isFavorite = true
             ),
             Quote(
                 id = 2,
@@ -25,40 +25,40 @@ class LocalQuoteDataSource {
                 id = 4,
                 text = "It is never too late to be what you might have been.",
                 author = "George Eliot",
-                isFavorite = false
+                isFavorite = true
             ),
             Quote(
                 id = 5,
                 text = "Dream big.",
-                author = "Anonymous",
+                author = "Zig Ziglar",
                 false
             ),
 
             Quote(
                 id = 6,
                 text = "Life is short.",
-                author = "Anonymous",
+                author = "Mark Twain",
                 isFavorite = false
             ),
 
             Quote(
                 id = 7,
                 text = "Success is getting what you want.",
-                author = "Anonymous",
+                author = "Dale Carnegie",
 //            category = "Success",
                 isFavorite = false
             ),
             Quote(
                 id = 8,
                 text = "Happiness is not something ready made. It comes from your own actions.",
-                author = "Anonymous",
+                author = "Dalai Lama XIV    ",
 //            category = "Happiness",
-                isFavorite = false
+                isFavorite = true
             ),
             Quote(
                 id = 9,
                 text = "Love is a choice.",
-                author = "Anonymous",
+                author = "Matthew Kelly",
 //            category = "Love",
                 isFavorite = false
             ),

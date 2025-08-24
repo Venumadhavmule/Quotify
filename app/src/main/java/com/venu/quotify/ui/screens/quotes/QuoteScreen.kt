@@ -23,6 +23,7 @@ import com.venu.quotify.ui.theme.QuotifyTheme
 fun QuoteScreen(
     quotesViewModel: QuoteViewModel,
     onNavigateToCreateQuote: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
     val quotes by quotesViewModel.quotes.collectAsState()
     Scaffold(

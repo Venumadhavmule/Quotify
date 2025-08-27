@@ -6,6 +6,8 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.venu.quotify.ui.navigation.Screen
@@ -18,7 +20,7 @@ fun BottomNavBar(navController: NavController) {
         Screen.CreateQuoteScreen,
         Screen.ProfileScreen
     )
-    val navigationBar = NavigationBar {
+    NavigationBar(containerColor = Color.Transparent) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
         items.forEach { item ->

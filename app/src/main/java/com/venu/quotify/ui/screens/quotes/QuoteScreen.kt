@@ -15,17 +15,15 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.venu.quotify.ui.components.QuoteCard
-import com.venu.quotify.ui.theme.QuotifyTheme
 
 @Composable
 fun QuoteScreen(
-    quotesViewModel: QuoteViewModel,
+    quoteViewModel: QuoteViewModel,
     onNavigateToCreateQuote: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val quotes by quotesViewModel.quotes.collectAsState()
+    val quotes by quoteViewModel.quotes.collectAsState()
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(onClick = onNavigateToCreateQuote) {
@@ -48,14 +46,5 @@ fun QuoteScreen(
                 })
             }
         }
-    }
-}
-
-@Preview
-@Composable
-fun QuoteScreenPreview() {
-    QuotifyTheme {
-//        QuoteScreen(onNavigateToCreateQuote = {})
-
     }
 }

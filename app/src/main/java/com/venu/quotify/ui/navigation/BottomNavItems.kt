@@ -32,7 +32,7 @@ sealed class BottomNavItems(
     )
 
     data object CreateQuoteScreen : BottomNavItems(
-        route = "create_quot1e_screen",
+        route = "create_quote_screen",
         title = "Create",
         selectedIcon = Icons.Filled.Add,
         unSelectedIcon = Icons.Outlined.Add

@@ -26,11 +26,4 @@ fun AppNavHost(
 
         composable(route = BottomNavItems.ProfileScreen.route) { }
     }
-
-    NavHost(navController = navController, startDestination = BottomNavItems.QuoteScreen.route) {
-        // Other composable destinations
-        composable(route = BottomNavItems.CreateQuoteScreen.route) {
-//            CreateQuoteScreen(viewModel = createQuoteViewModel, navController = navController)
-        }
-    }
 }

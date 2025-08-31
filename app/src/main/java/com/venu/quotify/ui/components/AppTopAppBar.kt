@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -24,7 +25,7 @@ fun AppTopAppBar(
             painter = painterResource(icon),
             contentDescription = "Top App Bar",
 //            modifier = Modifier.size(20.dp),
-//            alignment = Alignment.Center,
+            alignment = Alignment.Center,
 
         )
 

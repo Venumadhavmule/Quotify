@@ -13,7 +13,6 @@ fun AppNavHost(
     quoteViewModel: QuoteViewModel,
 ) {
     NavHost(navController = navController, startDestination = BottomNavItems.QuoteScreen.route) {
-
         composable(BottomNavItems.QuoteScreen.route) {
             QuoteScreen(quoteViewModel = quoteViewModel, onNavigateToCreateQuote = {
                 navController.navigate(BottomNavItems.QuoteScreen.route)

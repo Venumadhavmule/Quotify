@@ -37,7 +37,11 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     topBar = {
                         TopAppBar(
-                            title = { AppTopAppBar(if (appTheme) R.drawable.quotify_header_dark else R.drawable.quotify_header_light) },
+                            title = {
+                                AppTopAppBar(
+                                    navController = navController,
+                                )
+                            },
                             modifier = Modifier.statusBarsPadding(),
 //                            colors = androidx.compose.material3.TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
                         )

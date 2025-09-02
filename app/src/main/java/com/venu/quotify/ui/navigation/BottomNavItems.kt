@@ -18,28 +18,28 @@ sealed class BottomNavItems(
     val unSelectedIcon: ImageVector,
 ) {
     data object QuoteScreen : BottomNavItems(
-        route = "quote_screen",
+        route = "home",
         title = "Home",
         selectedIcon = Icons.Filled.Home,
         unSelectedIcon = Icons.Outlined.Home
     )
 
     data object FavouriteScreen : BottomNavItems(
-        route = "favourite_screen",
+        route = "favourite",
         title = "Favourite",
         selectedIcon = Icons.Filled.Favorite,
         unSelectedIcon = Icons.Outlined.Favorite
     )
 
     data object CreateQuoteScreen : BottomNavItems(
-        route = "create_quote_screen",
+        route = "create",
         title = "Create",
         selectedIcon = Icons.Filled.Add,
         unSelectedIcon = Icons.Outlined.Add
     )
 
     data object ProfileScreen : BottomNavItems(
-        route = "profile_screen",
+        route = "profile",
         title = "Profile",
         selectedIcon = Icons.Filled.Person,
         unSelectedIcon = Icons.Outlined.Person

@@ -12,7 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
@@ -73,7 +73,8 @@ private fun TopBarText(route: String) {
     Text(
         text = route,
         style = MaterialTheme.typography.headlineMedium,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.SemiBold,
+        fontFamily = FontFamily.SansSerif
 //        fontStyle = FontStyle.Italic
     )
 }
